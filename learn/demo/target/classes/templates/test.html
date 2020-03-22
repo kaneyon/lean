@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <script>
+  fetch('/api/Values').then(function (response) {
+	    return response.text();
+	}).then(function (text) {
+	    console.log('RESULT: ' + text);
+	});
+  </script>
+  </head>
+  <body>
+  </body>
+</html>

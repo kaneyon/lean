@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p th:text="'入力されたメッセージ：' + ${name.name}"/>
+	<p th:text="'入力された文字数：' + ${name.nameNumn}"/>
+
+	<form action="#" th:action="@{/confirm}" th:object="${name}" method="post">
+		<button type="submit" class="btn btn-default">登録実行</button>
+	</form>
+
+</body>
+</html>
